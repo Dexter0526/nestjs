@@ -12,7 +12,12 @@ describe('MoviesService', () => {
     service = module.get<MoviesService>(MoviesService);
   });
 
+  // it : 개별 테스트
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it("shuoud be 4", () => {
+    expect(2+2).toEqual(4);
+  })
 });
