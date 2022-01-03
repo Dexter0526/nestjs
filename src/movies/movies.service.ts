@@ -15,9 +15,6 @@ export class MoviesService {
         console.log(typeof id);
 // parseInt = +
         const movie = this.movies.find(movie => movie.id === +id);
-
-        console.log('After casting, ', typeof movie.id);
-
         if(!movie){
             throw new NotFoundException(`Movie with ID: ${id} not found!`);
         }
